@@ -4,38 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/stylesheet.css" />
     <title>Survey-Form</title>
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Short description</p>
-    <form id="survey-form">
-      <label id="name-label">
-        <input type="text" id="name" placeholder="Enter Your Name Please" />
-      </label>
-      <label id="email-label">
-        <input type="email" id="email" placeholder="Enter Your Email Please" />
-      </label>
-      <label id="number-label">
-        <input
-          type="number"
-          min="12"
-          max="80"
-          id="number"
-          placeholder="Enter Your Age Please"
-        />
-      </label>
-      <select name="" id="dropdown">
-        <option value=""></option>
-      </select>
-      <input type="radio" name="" value="" />
-      <input type="radio" name="" value="" />
-      <input type="radio" name="" value="" />
-      <input type="checkbox" name=" " value="" />
-      <input type="checkbox" name=" " value="" />
-      <input type="checkbox" name=" " value="" />
-      <textarea name="comment" form="survey-form">You may Gave us your feedback..</textarea>
-      <input type="submit">
-    </form>
+    <div class="container">
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Short description</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label">Name </label>
+          <input type="text" id="name" placeholder="Enter Your Name Please" required />
+        </div>
+        <div class="form-group">
+          <label id="email-label">Email </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email Please"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label"> Age</label>
+          <input
+            type="number"
+            min="12"
+            max="80"
+            id="number"
+            placeholder="Enter Your Age Please"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <select name="" id="dropdown">
+            <option value=""></option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="radio" name="" value="" />
+        </div>
+        <div class="form-group">
+          <input type="radio" name="" value="" />
+        </div>
+        <div class="form-group">
+          <input type="radio" name="" value="" />
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name=" " value="" />
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name=" " value="" />
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name=" " value="" />
+        </div>
+        <textarea name="comment" form="survey-form">
+You may Gave us your feedback..</textarea
+        >
+        <input type="submit" />
+      </form>
+    </div>
   </body>
 </html>
