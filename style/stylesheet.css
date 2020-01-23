@@ -1,0 +1,19 @@
+.container {
+  width: 400px;
+  margin: auto;
+  background-color: #eeeecccf;
+  text-align: center;
+}
+#survey-form {
+  background-color: #ddce84df;
+  padding: 10px;
+  line-height: 20px;
+}
+.form-group {
+  padding: 10px;
+  margin: auto;
+}
+input {
+  padding: 10px;
+  width: 300px;
+}
