@@ -107,7 +107,7 @@
   font-family: 16px;
   color: green;
 }
-.checkbox {
+.input-checkbox {
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
