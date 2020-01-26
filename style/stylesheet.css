@@ -19,10 +19,9 @@
   float: right;
   text-align: center;
   position: relative;
-  /* background-color: #fff; */
   padding-right: 50px;
 }
-
+/* The Header section  */
 .header {
   font-family: cursive, monospace, Impact, Haettenschweiler, "Arial Narrow Bold",
     sans-serif;
@@ -30,26 +29,21 @@
   height: 100vh;
   position: fixed;
   left: 10%;
-  /* box-sizing: border-box;  
-   */
-  /* align-self: center; */
 }
 #title {
   font-size: 50px;
 }
 #description {
-  /* padding: 5px 10px; */
   margin-top: -20px;
 }
-.wrapper {
-}
+
+/* The main content section which is a form  */
 #survey-form {
   padding: 20px;
-  /* background-color: #fff; */
   box-sizing: border-box;
 }
 .form-group {
-  background-color: #fffe;
+  background-color: #fffd;
   border-radius: 4px;
   padding: 15px;
   margin: 10px auto;
@@ -57,26 +51,26 @@
   /* color: #fff;   */
 }
 .form-element {
-  display: block;
   padding: 11px;
   width: 400px;
-  /* height: 50px; */
-  /* border: */
   border: 0;
+  background-color: transparent;
   border-bottom: 1px solid #414146;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-left: 80px;
   border-radius: 2px;
 }
-.first-label {
-  /* line-height: 2em; */
+#name-label,
+#email-label,
+#number-label {
   font-size: 1.2em;
-  /* font-family: Georgia, "Times New Roman", Times, serif; */
   font-weight: 600;
   color: #414146;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: inline;
+  color: green;
 }
 .input-title {
   font-size: 1.4rem;
