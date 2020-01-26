@@ -1,5 +1,9 @@
 .bg {
-  background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(255, 255, 255, 0.7)
+    ),
     url(../assets/bg.jpg);
   position: fixed;
   top: 0;
@@ -12,30 +16,31 @@
   float: right;
   text-align: center;
   position: relative;
-  background-color: #fff;
+  /* background-color: #fff; */
   padding-right: 50px;
 }
 
 .header {
   font-family: cursive, monospace, Impact, Haettenschweiler, "Arial Narrow Bold",
     sans-serif;
-  color: #414146;
-  height: 100%;
+  color: #fff;
+  height: 100px;
   box-sizing: border-box;
 }
 #title {
   font-size: 50px;
 }
 #description {
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
+  margin-top: -20px;
 }
 #survey-form {
-  padding: 40px;
-  background-color: #fff;
+  padding: 20px;
+  /* background-color: #fff; */
   box-sizing: border-box;
 }
 .form-group {
-  background-color: #aaa;
+  background-color: #fff;
   border-radius: 4px;
   padding: 15px;
   margin: 10px auto;
@@ -47,21 +52,20 @@
   padding: 11px;
   width: 400px;
   /* height: 50px; */
-  border-collapse: collapse;
-  border-color: white;
-  border-width: 0;
+  /* border: */
+  border: 0;
+  border-bottom: 1px solid #414146;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-left: 80px;
   border-radius: 2px;
-  /* color: #fff; */
 }
 .first-label {
   /* line-height: 2em; */
   font-size: 1.2em;
   /* font-family: Georgia, "Times New Roman", Times, serif; */
   font-weight: 600;
-  color: white;
+  color: #414146;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -72,41 +76,53 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: left;
   text-indent: 5px;
-  color: #fff;
+  color: #414146;
 }
 .input-radio {
   padding: 40px;
   font-size: 19px;
 }
-.checkbox-elm {
-  display: inline-flex;
-  cursor: pointer;
+.checkbox-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+.checkbox-label {
+  width: 42%;
   position: relative;
+  padding: 20px;
+}
+.checkbox-label em {
+  padding: 10px;
+  font-family: 16px;
+  color: green;
 }
 .checkbox {
+  cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -o-appearance: none;
-  border: 1px solid #aaa;
-  border-radius: 4px;
   padding: 10px;
+  border-radius: 4px;
   outline: none;
+  border: 2px solid #414146;
 }
 .checkbox > span {
-  color: #34495e;
   padding: 0 0.25rem;
+  margin-right: 5px;
 }
 .checkbox:checked {
-  border: 1.5px solid #e5f;
-  background-color: #ee59fd66;
+  border: 1.5px solid yellow;
+  background-color: yellowgreen;
 }
 .checkbox-elm > input:checked + span::before {
   content: "\2713";
   font-size: 2em;
   display: block;
   text-align: center;
-  color: #fff;
+  color: red;
   position: absolute;
   left: 0.9rem;
   top: 0.5rem;
@@ -117,16 +133,17 @@
   height: 100px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 18px;
 }
 footer {
   width: 100%;
-  background-color: #aaa;
+  /* margin-top: -40px; */
 }
 .input-submit {
   padding: 10px;
-  width: 60%;
-  height: 120px;
-  float: right;
+  width: 40%;
+  height: 70px;
+  float: center;
   border-radius: 4px;
   color: rgb(34, 33, 33);
   font-size: 22px;
@@ -135,6 +152,6 @@ footer {
   font-weight: 700;
   /* float: right; */
   color: #fff;
-  background-color: #ee59fd66;
-  margin: 2px;
+  background-color: #8d0909de;
+  /* margin: 2px; */
 }
