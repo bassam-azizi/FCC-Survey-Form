@@ -39,8 +39,13 @@
 
 /* The main content section which is a form  */
 #survey-form {
-  padding: 20px;
+  /* padding: 20px; */
   box-sizing: border-box;
+  display: grid;
+}
+.basic-info{
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 .form-group {
   background-color: #fffd;
@@ -81,15 +86,52 @@
   text-indent: 5px;
   color: #414146;
 }
-.input-radio {
+
+/* ____ The drop down - select group ____ */
+#dropdown {
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+  border: 0 !important;
+  background-color: rgba(144, 194, 144, 0.2);
+  padding: 13px;
+}
+#dropdown:focus {
+  border: 1px solid green;
+}
+.dropdown-wrapper::after {
+  content: "\25bc";
+  position: relative;
+  top: 5px;
+  left: -33px;
+  bottom: 0;
+  padding: 0.25em;
+  border-radius: 50%;
+  background: rgba(0, 128, 0, 0.6);
+  pointer-events: none;
+  /* opacity: 0.9; */
+  font-size: 1.3em;
+  color: white;
+}
+.dropdown-option {
+  font-size: 16px;
+  color: green;
+}
+/* ___the radio group___  */
+.radio-label {
   padding: 40px;
   font-size: 19px;
+  line-height: 5;
 }
+.input-radio {
+  padding: 20px;
+}
+
+/* _____ The checkbox group _____  */
 .checkbox-group {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 .checkbox-label {
   width: 42%;
@@ -112,25 +154,26 @@
   outline: none;
   border: 2px solid #414146;
 }
-.checkbox > span {
+.checkbox-label > span {
   padding: 0 0.25rem;
   margin-right: 5px;
 }
-.checkbox:checked {
-  border: 1.5px solid yellow;
+.checkbox-label > input:checked {
+  border: 1.5px solid white;
   background-color: yellowgreen;
 }
-.checkbox-elm > input:checked + span::before {
+.checkbox-label > input:checked + span::before {
   content: "\2713";
   font-size: 2em;
   display: block;
   text-align: center;
-  color: red;
+  /* color: red; */
   position: absolute;
   left: 0.9rem;
   top: 0.5rem;
 }
 
+/* ____ The text Area group _____  */
 .input-textarea {
   width: 95%;
   height: 100px;
@@ -140,8 +183,9 @@
 }
 footer {
   width: 100%;
-  /* margin-top: -40px; */
 }
+
+/* _____ It's a submit Buttom _____  */
 .input-submit {
   padding: 10px;
   width: 40%;
