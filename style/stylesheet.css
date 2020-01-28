@@ -12,15 +12,8 @@
   height: 100%;
 }
 .container {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: flex-end; */
-  /* width: 750px; */
-  /* float: right; */
   text-align: center;
-  position: relative;
-  padding-right: 50px;
-  width: 100%;
+  max-width: 100%;
 }
 /* The Header section  */
 .header {
@@ -39,50 +32,46 @@
 }
 
 /* The main content section which is a form  */
+#survey-form {
+  /* padding: 160px; */
+  box-sizing: border-box;
+  /* width: 600px; */
+  display: block;
+  position: fixed;
+  right: 20%;
+  top: 20%;
+}
 #survey-wrapper {
-  /* padding: 20px; */
-  /* box-sizing: border-box; */
-  width: 70%;
-  display: grid;
-  grid-template-columns: 1fr, 1fr;
-  grid-template-rows: 1fr, 1fr, 1fr;
-  /* grid-template-rows: auto; */
-  /* background: red; */
-}
-#textinput-wrapper {
-  grid-column-start: 1;
-  grid-row-start: 1;
-}
-#dropdown-wrapper {
-  grid-column-start: 1;
-  grid-row-start: 2;
-}
-#radio-wrapper {
-  grid-column-start: 1;
-  grid-row-start: 3;
-}
-#checkbox-wrapper {
-  grid-column-start: 2;
-  grid-row-start: 1;
-}
-#textarea-wrapper {
-  grid-column-start: 2;
-  grid-row-start: 3;
-}
-/* .basic-info {
-  grid-column-start: 1;
-  grid-column-end: 2;
-/* } */
-.form-group {
-  /* display: block; */
-  width: 550px;
-  background-color: #fffd;
+  width: 600px;
+  overflow: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 600px;
+  height: 320px;
   border-radius: 4px;
-  padding: 15px;
-  /* margin: 10px auto; */
+  padding: 55px;
+}
+
+.form-group {
+  display: none;
+  margin: 10px 0;
+}
+.default {
+  display: block;
+}
+:target {
+  display: block;
+}
+:target ~ .default {
+  display: none;
+}
+.pageNumber {
+  padding: 5px;
+  background-color: #ffee;
+  border: #ff28;
 }
 .form-element {
-  padding: 11px;
+  display: block;
+  padding: 15px;
   width: 200px;
   border: 0;
   background-color: transparent;
@@ -209,24 +198,32 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 18px;
 }
-footer {
+/* footer {
   width: 100%;
+} */
+#navigation {
+  position: relative;
+  top: 50%;
+}
+.page-process {
+  display: inline;
 }
 
 /* _____ It's a submit Buttom _____  */
 .input-submit {
+  /* position: fixed;
+  right: 20%;
+  bottom: 15%; */
+  float: right;
   padding: 10px;
   width: 40%;
   height: 70px;
-  float: center;
   border-radius: 4px;
   color: rgb(34, 33, 33);
   font-size: 22px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 700;
-  /* float: right; */
   color: #fff;
   background-color: #8d0909de;
-  /* margin: 2px; */
 }
