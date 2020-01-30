@@ -11,10 +11,11 @@
   width: 100%;
   height: 100%;
 }
-.container {
+/* .container {
   text-align: center;
   max-width: 100%;
-}
+} */
+/* ************************************* */
 /* The Header section  */
 .header {
   font-family: cursive, monospace, Impact, Haettenschweiler, "Arial Narrow Bold",
@@ -31,15 +32,14 @@
   margin-top: -20px;
 }
 
+/* **************************************** */
 /* The main content section which is a form  */
 #survey-form {
-  /* padding: 160px; */
-  box-sizing: border-box;
-  /* width: 600px; */
   display: block;
   position: fixed;
   right: 20%;
   top: 20%;
+  box-sizing: border-box;
 }
 /* #survey-wrapper { */
 /* } */
@@ -47,13 +47,14 @@
 .form-group {
   display: none;
   background-color: rgba(255, 255, 255, 0.8);
-  width: 600px;
+  width: 700px;
   height: 320px;
   padding: 55px;
   margin: 10px 0;
   border-radius: 4px;
-  overflow: none;
+  /* overflow: none; */
 }
+
 .default {
   display: block;
 }
@@ -64,25 +65,13 @@
   display: none;
 }
 .form-group .main {
-  height: 280px;
-}
-.form-navigation {
-  height: 40px;
-  text-align: right;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
-  padding: 5px;
-  color: red;
-}
-.pageNumber {
-  padding: 5px;
-  background-color: #ffee;
-  border: #ff28;
+  height: 80%;
+  box-sizing: border-box;
 }
 .form-element {
   display: block;
   padding: 15px;
-  width: 200px;
+  width: 300px;
   border: 0;
   background-color: transparent;
   border-bottom: 1px solid #414146;
@@ -92,17 +81,40 @@
   margin-right: 10px;
 }
 
+.form-navigation {
+  display: block;
+  height: 20%;
+  text-align: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  padding: 5px;
+  color: red;
+  position: relative;
+  bottom: -20px;
+}
+/* .pageNumber {
+  padding: 5px;
+  background-color: #ffee;
+  border: #ff28;
+} */
+
 #name-label,
 #email-label,
 #number-label {
+  display: block;
   font-size: 1.2em;
-  font-weight: 600;
+  font-weight: 500;
   color: #414146;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  float: left;
-  margin-left: 10px;
+  /* float: left; */
+  margin: 10px 5px;
   color: green;
+}
+#name,
+#email,
+#age {
+  display: inline-block;
 }
 .input-title {
   font-size: 1.4rem;
@@ -112,21 +124,30 @@
   text-align: left;
   text-indent: 5px;
   color: #414146;
+  font-style: italic;
 }
 
 /* ____ The drop down - select group ____ */
+.dropdown-group {
+  width: 50%;
+  margin: 50px auto;
+  font-size: 16px;
+  text-align: center;
+}
 #dropdown {
   appearance: none;
   outline: none;
   box-shadow: none;
   border: 0 !important;
-  background-color: rgba(144, 194, 144, 0.2);
+  background-color: #fff;
   padding: 13px;
+  border-radius: 2px;
+  font-size: 16px;
 }
-#dropdown:focus {
+/* #dropdown:focus {
   border: 1px solid green;
-}
-.dropdown-wrapper::after {
+} */
+/* .dropdown-wrapper::after {
   content: "\25bc";
   position: relative;
   top: 5px;
@@ -138,10 +159,11 @@
   pointer-events: none;
   font-size: 1.3em;
   color: white;
-}
+} */
+
 .dropdown-option {
   font-size: 16px;
-  color: green;
+  color: #414146;
 }
 /* ___the radio group___  */
 .radio-label {
@@ -154,7 +176,7 @@
 }
 
 /* _____ The checkbox group _____  */
-.checkbox-group {
+#checkbox-group {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -165,8 +187,7 @@
   width: 42%;
   position: relative;
   padding: 10px;
-  font-family: 16px;
-  color: green;
+  font-size: 18px;
   margin-left: 20px;
 }
 .input-checkbox {
@@ -187,7 +208,7 @@
 }
 .checkbox-label > input:checked {
   border: 1.5px solid white;
-  background-color: yellowgreen;
+  background-color: white;
 }
 .checkbox-label > input:checked + span::before {
   content: "\2713";
@@ -203,7 +224,7 @@
 /* ____ The text Area group _____  */
 .input-textarea {
   width: 95%;
-  height: 100px;
+  height: 70%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 18px;
@@ -211,10 +232,6 @@
 /* footer {
   width: 100%;
 } */
-#navigation {
-  position: relative;
-  top: 50%;
-}
 .page-process {
   display: inline;
 }
@@ -225,15 +242,19 @@
   right: 20%;
   bottom: 15%; */
   float: right;
-  padding: 10px;
-  width: 40%;
-  height: 70px;
-  border-radius: 4px;
+  padding: 20px;
+  width: 140px;
+  height: 60px;
+  border-radius: 7px;
   color: rgb(34, 33, 33);
-  font-size: 22px;
+  font-size: 18px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 700;
   color: #fff;
   background-color: #8d0909de;
+}
+
+::placeholder {
+  font-size: 16px;
 }
