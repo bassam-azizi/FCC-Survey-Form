@@ -41,19 +41,18 @@
   right: 20%;
   top: 20%;
 }
-#survey-wrapper {
-  width: 600px;
-  overflow: none;
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 600px;
-  height: 320px;
-  border-radius: 4px;
-  padding: 55px;
-}
+/* #survey-wrapper { */
+/* } */
 
 .form-group {
   display: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 600px;
+  height: 320px;
+  padding: 55px;
   margin: 10px 0;
+  border-radius: 4px;
+  overflow: none;
 }
 .default {
   display: block;
@@ -63,6 +62,17 @@
 }
 :target ~ .default {
   display: none;
+}
+.form-group .main {
+  height: 280px;
+}
+.form-navigation {
+  height: 40px;
+  text-align: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  padding: 5px;
+  color: red;
 }
 .pageNumber {
   padding: 5px;
