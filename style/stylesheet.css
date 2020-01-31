@@ -105,15 +105,17 @@
   color: #414146;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  /* float: left; */
   margin: 10px 5px;
   color: green;
 }
 #name,
 #email,
-#age {
+#number {
   display: inline-block;
+  text-indent: 2px;
+  margin-left: 80px;
 }
+
 .input-title {
   font-size: 1.4rem;
   font-weight: 600;
@@ -142,22 +144,6 @@
   border-radius: 2px;
   font-size: 16px;
 }
-/* #dropdown:focus {
-  border: 1px solid green;
-} */
-/* .dropdown-wrapper::after {
-  content: "\25bc";
-  position: relative;
-  top: 5px;
-  left: -33px;
-  bottom: 0;
-  padding: 0.25em;
-  border-radius: 50%;
-  background: rgba(0, 128, 0, 0.6);
-  pointer-events: none;
-  font-size: 1.3em;
-  color: white;
-} */
 
 .dropdown-option {
   font-size: 16px;
@@ -185,8 +171,8 @@
   top: 21px;
 }
 .radio-label input[type="radio"]:checked ~ span {
-  background: #f8dcb7;
-  border: 1.5px solid #c9a45c;
+  border: 2px solid #c9a45c;
+  background: #a18957;
 }
 .radio-label span::after {
   content: "\2713";
@@ -236,7 +222,7 @@
 }
 .checkbox-label > input:checked {
   border: 1.5px solid #c9a45c;
-  background: #f8dcb7;
+  background: #a18957;
 }
 .checkbox-label > input:checked + span::before {
   content: "\2713";
