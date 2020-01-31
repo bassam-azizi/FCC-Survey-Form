@@ -65,7 +65,7 @@
   display: none;
 }
 .form-group .main {
-  height: 80%;
+  height: 65%;
   box-sizing: border-box;
 }
 .form-element {
@@ -83,14 +83,12 @@
 
 .form-navigation {
   display: block;
-  height: 20%;
+  height: 35%;
   text-align: right;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
-  padding: 5px;
+  padding: 3px;
   color: red;
-  position: relative;
-  bottom: -20px;
 }
 /* .pageNumber {
   padding: 5px;
@@ -167,12 +165,42 @@
 }
 /* ___the radio group___  */
 .radio-label {
-  padding: 40px;
-  font-size: 19px;
+  padding: 20px 0 0 80px;
+  font-size: 24px;
   line-height: 5;
+  position: relative;
+  cursor: pointer;
 }
-.input-radio {
-  padding: 20px;
+.radio-label input[type="radio"] {
+  display: none;
+}
+.radio-label span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 49px;
+  top: 21px;
+}
+.radio-label input[type="radio"]:checked ~ span {
+  background: #f8dcb7;
+  border: 1.5px solid #c9a45c;
+}
+.radio-label span::after {
+  content: "\2713";
+  display: block;
+  font-size: 38px;
+  color: white;
+  display: block;
+  position: absolute;
+  top: -6rem;
+  left: 0;
+  transform: scale(0);
+}
+.radio-label input[type="radio"]:checked ~ span::after {
+  transform: translate(0, 5px) scale(1);
 }
 
 /* _____ The checkbox group _____  */
@@ -199,7 +227,7 @@
   padding: 10px;
   border-radius: 4px;
   outline: none;
-  border: 2px solid darkolivegreen;
+  border: 2px solid #414146;
   margin-right: 7px;
 }
 .checkbox-label > span {
@@ -207,18 +235,19 @@
   margin-right: 5px;
 }
 .checkbox-label > input:checked {
-  border: 1.5px solid white;
-  background-color: white;
+  border: 1.5px solid #c9a45c;
+  background: #f8dcb7;
 }
 .checkbox-label > input:checked + span::before {
   content: "\2713";
   font-size: 2em;
   display: block;
   text-align: center;
-  color: #8d0909de;
+  color: #fff;
   position: absolute;
   left: 0.9rem;
   top: 0.1rem;
+  transform: translate(0, -10px);
 }
 
 /* ____ The text Area group _____  */
@@ -228,6 +257,9 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 18px;
+  margin: 10px auto;
+  line-height: 1.5em;
+  border-radius: 5px;
 }
 /* footer {
   width: 100%;
@@ -235,26 +267,43 @@
 .page-process {
   display: inline;
 }
+.nav-anchor {
+  text-decoration: none;
+}
+.p-navigator {
+  padding: 10px;
+  font-size: 53px;
+  font-weight: 800;
+  color: #414146;
+}
+
+#fourthPage {
+  float: left;
+}
+.stage {
+  color: #414146;
+  float: right;
+}
 
 /* _____ It's a submit Buttom _____  */
+.submit-div {
+  display: inline-block;
+  margin-top: 40px;
+}
 .input-submit {
-  /* position: fixed;
-  right: 20%;
-  bottom: 15%; */
   float: right;
-  padding: 20px;
-  width: 140px;
-  height: 60px;
-  border-radius: 7px;
-  color: rgb(34, 33, 33);
+  padding: 15px 55px;
   font-size: 18px;
+  font-weight: 700;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 700;
-  color: #fff;
+  color: rgba(34, 33, 33, 0.9);
+  border-radius: 7px;
+  /* color: #fff; */
   background-color: #8d0909de;
 }
 
 ::placeholder {
   font-size: 16px;
+  padding: 10px;
 }
