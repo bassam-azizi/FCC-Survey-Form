@@ -10,8 +10,9 @@
   <body>
       <div class="bg"></div>
         <header class="header">
-          <h1 id="title">Survey Form</h1>
-          <p id="description">Short description</p>
+          <h1 id="title">Registration Form</h1>
+          <p id="description">Stay up to date with all our new tutorials, Front-end news, <br>
+          & Help us improve our platform. </p>
         </header>
 
           <div id="survey-form">  
@@ -19,6 +20,7 @@
               <!-- second container that comes inside the form container  -->
             <div class="form-group" id="dropdown-wrapper">
               <main class="main">
+                <p class="stage">2/5</p>
                 <p class="input-title">Which Option describe your current role?</p>
                 <div class="dropdown-group">
                   <select class="form-element" name="occupation-dropdown" id="dropdown">
@@ -33,11 +35,11 @@
               </main>
               <nav class="form-navigation">
                   <div class="page-process" id="p-one">
-                    <a href="#textinput-wrapper"><span class="pageNumber" id="firstpage">back</span></a>
+                    <a href="#textinput-wrapper" class="nav-anchor"><span class="p-navigator" id="firstpage">&#8592</span></a>
                   </div>
                   
                   <div class="page-process" id="p-three">
-                    <a href="#radio-wrapper"><span class="pageNumber" id="thirdpage">Next</span></a>
+                    <a href="#radio-wrapper" class="nav-anchor"><span class="p-navigator">&#8594</span></a>
                   </div>
               </nav>             
             </div>
@@ -46,23 +48,27 @@
             <!-- third container that comes inside the form container  -->
             <div class="form-group" id="radio-wrapper">
               <main class="main">
+                <p class="stage">3/5</p>
                 <p class="input-title">Would you recommend free code camp to a friend ? </p>
-                <label class="radio-label">
-                  <input class="input-radio" type="radio" name="user-recommend" value="definitely" /><strong>Definitely</strong>
+                <label class="radio-label" for="definitely">Definitely
+                  <input id="definitely" type="radio" name="user-recommend" value="definitely" />
+                  <span></span>
                 </label>  
-                <label class="radio-label">
-                  <input class="input-radio" type="radio" name="user-recommend" value="maybe" /><strong>Maybe</strong>
+                <label class="radio-label" for="maybe">Maybe
+                  <input id="maybe" type="radio" name="user-recommend" value="maybe" />
+                  <span></span>
                 </label>
-                <label class="radio-label">
-                  <input class="input-radio" type="radio" name="user-recommend" value="notSure" /><strong>Not sure</strong>
+                <label for="notSure" class="radio-label">Not Sure
+                  <input id="notSure" type="radio" name="user-recommend" value="notSure" />
+                  <span></span>
                 </label>
               </main>
               <nav class="form-navigation">
                 <div class="page-process" id="p-two">
-                  <a href="#dropdown-wrapper"><span class="pageNumber" id="secondpage">back</span></a>
+                  <a href="#dropdown-wrapper" class="nav-anchor"><span class="p-navigator" id="secondpage">&#8592</span></a>
                 </div>
                 <div class="page-process" id="p-four">
-                  <a href="#checkbox-wrapper"><span class="pageNumber" id="fourthpage">next</span></a>
+                  <a href="#checkbox-wrapper" class="nav-anchor"><span class="p-navigator">&#8594</span></a>
                 </div>
               </nav>
             </div>
@@ -71,6 +77,7 @@
               <!-- fourth container that comes inside the form container __ checkbox group  -->
             <div class="form-group" id="checkbox-wrapper">
               <main class="main">
+                <p class="stage">4/5</p>
                 <p class="input-title"> What would you like to see Improved </p>
                 <div id="checkbox-group">
 
@@ -105,10 +112,10 @@
               </main>
               <nav class="form-navigation">
                 <div class="page-process" id="p-three">
-                  <a href="#radio-wrapper"><span class="pageNumber" id="thirdpage">back</span></a>
+                  <a href="#radio-wrapper" class="nav-anchor"><span class="p-navigator" id="thirdpage">&#8592</span></a>
                 </div>
                 <div class="page-process" id="p-five">
-                  <a href="#textarea-wrapper"><span class="pageNumber" id="fivthpage">next</span></a>
+                  <a href="#textarea-wrapper" class="nav-anchor"><span class="p-navigator">&#8594</span></a>
                 </div>
               </nav>
             </div>
@@ -117,22 +124,25 @@
             <!-- fith container that comes inside the form container __ textarea  -->
             <div class="form-group" id="textarea-wrapper">
               <main class="main">
+                <p class="stage">5/5</p>
                 <p class="input-title">Any comments or suggestions ? </p>
                 <textarea class="input-textarea" name="comment" form="survey-form" placeholder="Enter your comments here.."></textarea
                 >
               </main>
               <nav class="form-navigation">
                 <div class="page-process" id="p-four">
-                  <a href="#checkbox-wrapper"><span class="pageNumber" id="fourthpage">Back</span></a>
+                  <a href="#checkbox-wrapper" class="nav-anchor"><span class="p-navigator" id="fourthPage">&#8592</span></a>
                 </div>
-        <input class="input-submit" type="submit" />
-
+                <div class="submit-div">
+                  <input class="input-submit" type="submit" />
+                </div>
               </nav>
             </div>
 
             <!-- first container inside the form -->
             <div class="form-group default" id="textinput-wrapper">
               <main class="main">
+                <p class="stage">1/5</p>
                 <p class="input-title">Getting Started</p>
 
                 <label for="name" id="name-label">
@@ -149,7 +159,7 @@
               </main>
               <nav class="form-navigation">
                 <div class="page-process" id="p-two">
-                  <a href="#dropdown-wrapper"><span class="pageNumber" id="secondpage">Next</span></a>
+                  <a href="#dropdown-wrapper" class="nav-anchor"><span class="p-navigator">&#8594</span></a>
                 </div>
                 
               </nav>
