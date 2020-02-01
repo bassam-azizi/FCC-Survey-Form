@@ -279,7 +279,8 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: rgba(34, 33, 33, 0.9);
   border-radius: 7px;
-  background-color: #8d0909de;
+  background-color: #5ccccc;
+  /* background-color: #8d0909de; */
 }
 
 ::placeholder {
